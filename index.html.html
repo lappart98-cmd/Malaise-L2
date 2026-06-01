@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Malaise voyageur — Ligne 2</title>
+
+<!-- PWA / installation -->
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk1hbGFpc2Ugdm95YWdldXIg4oCUIExpZ25lIDIiLCAic2hvcnRfbmFtZSI6ICJNYWxhaXNlIEwyIiwgImxhbmciOiAiZnIiLCAic3RhcnRfdXJsIjogIi4iLCAic2NvcGUiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMDA2NEIwIiwgInRoZW1lX2NvbG9yIjogIiMwMDY0QjAiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBRVIwbEVRVlI0bk8zZDRYSFRRQlNGVVptaFAxSUVWRVdLZ0FyaEJ6Q0U0RGlXOVZiU3ZudE9BWW5IdnA5V1RqTE9aVG1iejk5K0hQMFFHT2o1NlhMMFEzanAyQWRqN0N6TG9WSHMvNDJObmx0MmptRy9iMmI0ckxGVENPTy9pZUd6eGVBUXhuMXh3NmZTb0JEcXY2amhNMUp4Q0I4cXY1anhNMXp4eG1wcU1ueU9VSEFhYkQ4QmpKK2pGR3h2V3dER3o5RTJidkR4QUl5ZnM5aXd4Y2NDTUg3TzVzRk5yZy9BK0RtckI3YTVMZ0RqNSt4V2J2VCtBSXlmV2F6WTZuMEJHRCt6dVhPejd3ZGcvTXpxanUzVy9pa0VUT1oyQUs3K3pPNmREYjhkZ1BIVHhZMHR1d1VpMnZVQVhQM3A1bzFOT3dHSTluOEFydjUwZFdYYlRnQ2kvUnVBcXovZHZkcTRFNEJvZndOdzlTZkZpNjA3QVlnbUFLTDlDc0R0RDJsK2I5NEpRRFFCRUUwQVJCTUEwUzdlQUpQTUNVQTBBUkJOQUVRVEFORUVRRFFCRUUwQVJCTUEwUVJBTkFFUTdlUFJENkM3SDE4L2JmNGFseS9mQ3g0SjEvaGJvRUVxaHYrYUVPcTVCUnBneFBoSGZ0MWtBaWcyZXFRaXFDV0FRbnVOVXdSMUJGQms3MUdLb0lZQWlDYUFBa2RkalowQzJ3bUFhQUlnbWdDSUpnQ2lDWUJvQWlDYUFJZ21BS0lKZ0dnQ0lKb0FpQ1lBb2dtQWFBSWdtZ0NJSmdDaUNZQm9BaUNhQUlnbUFLSUpnR2dDSUpvQWlDWUFvZ21BYUFJZ1d0dC9rT0ZqQSt0MS9BY2Q3UUl3L1BFNmhkRHFGc2o0OTlIcGVXNFRRS2NYWlFaZG51OFdBWFI1TVdiVDRYbWZQb0FPTDhMTVpuLytwdzhBdHBnNmdObXZQbDNNL0RwTUhRQnNKUUNpQ1lCb0FpQ2FBSWdtQUtJSmdHZ0NJSm9BaUNZQW9nbUFhQUlnbWdDSUpnQ2lDWUJvQWlEYTFBRjArbmlPbWMzOE9rd2RBR3cxZlFBelgzMDZtUDM1bno2QVpabi9SWmhWaCtlOVJRREwwdVBGbUVtWDU3dE5BTXZTNTBVNXUwN1BjN3NQeC8xajVvL3FPS3RPdy8ramJRQjdPaksyanFQY1U2dGJJRmhMQUVRVEFORUVRRFFCRUUwQVJCTUEwUVJBTkFFUVRRQkVFd0RSQkVBMEFSQk5BRVFUQU5FRVFEUUJFRTBBUkJNQTBRUkFOQUVRVFFCRUV3RFJCRUEwQVJCTkFFUVRRSUdqUHA3UXh5SnVKd0NpQ2FESTNsZGpWLzhhQWlpMDF5aU52NDRBaW8wZXAvSFhFc0FBbzBacS9QWDhnNHpCS3Y1NWh1R1BJd0NpdVFVaW1nQ0lKZ0NpQ1lCb0FpQ2FBSWdtQUtJSmdHZ0NJTnFINWZucGN2U0RnRU04UDEyY0FFUVRBTkVFUURRQkVPMVhBTjRJaytiMzVwMEFSQk1BMGY0RzREYUlGQysyN2dRZzJyOEJPQVhvN3RYR25RQkUrejhBcHdCZFhkbTJFNEJvMXdOd0N0RE5HNXQyQWhEdDdRQ2NBblJ4WTh1M1R3QVJNTHQzTnV3V2lHanZCK0FVWUZaM2JQZStFMEFFek9iT3pkNS9DeVFDWnJGaXErdmVBNGlBczF1NTBmVnZna1hBV1Qyd3pjZCtDaVFDenViQlRUNytZMUFSY0JZYnRyanQ5d0FpNEdnYk43ajlGMkVpNENnRjI2c2RyLzg0eVI0S0w3cTFmd3JoTkdDMDRvMk5HNnpUZ0VxRExxN2pyOWhDWUl2QmR4WDczYklJZ1RWMnVwM2UvNTVkQ055eTgvdklZOSswaW9GbE9mU0hKK2Y3cVkwb2VqdlpUd3AvQWhrLzk5N1AwUytEQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQU42MGxFUVZSNG5PM2M0WGthT1JpRjBXR2Y3Uzhwd3FrcUtjS3AwUHZEU3dJMllBWm1wRSs2NTFRQThnUDNSWkFjRm1wNmVYM3IvUkFBTnZIcis2SDNRK0F6ZjVSZUREekFPNEhRaFVOdndkZ0RyQ01LZHVlQTkyRHdBYllsQ0RiblFMZGc4QUhhRWdSUGM0Q1BNdm9BTllpQmh6aTBOWXcrUUcxaTRHNE82aXRHSDJCTVl1QW1oM09ONFFlWWd4QzR5S0djTXZvQWN4TURmemlJWlRIOEFHbUVRSGdBR0g2QWJNRWhrUG5FRFQ4QXB3SkRJT3NKRzM0QWJna0tnWXduYXZnQldDTWdCUDdwL1FCMlovd0JXQ3RnTytZdG5JQS9IZ0FOVEhvYk1OK1RNdndBN0dHeUVKanJLd0RqRDhCZUp0dVlPV3Btc2o4S0FNVk5jQnN3L2cyQThRZWd0UW0yWit3QW1PQVBBTUNnQnQrZ01hOHdCajkwQUNZejRGY0M0OTBBR0g4QXFobHdtOFlLZ0FFUEdJQVFnMjNVR0ZjV2d4MHFBT0VHK0VxZy9nMkE4UWRnTkFOc1YrMEFHT0FBQWVDaTRodFdOd0NLSHh3QWZLbndsdFVNZ01JSEJnQ3JGTjIwZWdGUTlLQUE0R0VGdDYxV0FCUThJQURZUkxHTnF4TUF4UTRHQURaWGFPdHFCRUNoQXdHQVhSWFp2UDRCVU9RZ0FLQ1pBdHZYTndBS0hBQUFkTkY1QS9zRmdQRUhJRjNITGV3VEFNWWZBTjUxMnNUMkFXRDhBZUJjaDIxc0d3REdId0F1YTd5UjdRTEErQVBBYlEyM3NrMEFHSDhBdUUranplei8vd0FBQU0zdEh3QSsvUVBBT2cyMmM5OEFNUDRBOEppZE4zUy9BREQrQVBDY0hiZlVid0FBSU5BK0FlRFRQd0JzWTZkTjNUNEFqRDhBYkd1SGJkMDJBSXcvQU94ajQ0MzFHd0FBQ0xSZEFQajBEd0Q3Mm5CcnR3a0E0dzhBYld5MHViNENBSUJBendlQVQvOEEwTllHMitzR0FBQUNQUmNBUHYwRFFCOVBidkRqQVdEOEFhQ3ZKN2JZVndBQUVPaXhBUERwSHdCcWVIQ1QzUUFBUUtEMUFlRFRQd0RVOHNBMnV3RUFnRURyQXNDbmZ3Q29hZVZHdXdFQWdFRDNCNEJQL3dCUTI0cXRkZ01BQUlIdUN3Q2YvZ0ZnREhkdXRoc0FBQWdrQUFBZzBOY0I0UG9mQU1aeXgzYTdBUUNBUUxjRHdLZC9BQmpURnh2dUJnQUFBZ2tBQUFoMFBRQmMvd1BBMkc1c3VSc0FBQWdrQUFBZzBPVUFjUDBQQUhPNHN1bHVBQUFna0FBQWdFQ2ZBOEQxUHdETTVjSzJ1d0VBZ0VBQ0FBQUNDUUFBQ0hRZUFMNy9CNEE1ZmRoNE53QUFFRWdBQUVBZ0FRQUFnZjRHZ08vL0FXQnVKMXZ2QmdBQUFna0FBQWdrQUFBZ2tBQUFnRUR2QWVBSGdBQ1E0Zi9OZHdNQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUTZPRC9BQUNBUEc0QUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBajBiKzhIQUt6Mzl2TmI3NGZ3eWVISDc5NFBBVmpoc0x5OHZ2VitFTURYS283K05XSUE2aE1BVU5oSW8zK05HSUNhQkFBVU5NUHdmeVFFb0JZL0FvUmlaaHovWlpuM2VjR28zQUJBRVVrRDZUWUErbk1EQUFVa2pmK3k1RDFmcUVnQVFHZXBZNWo2dktFS0FRQWRwWTlnK3ZPSG5nUUFkR0w4M2prSDZFTUFRQWRHNzV6emdQWUVBRFJtN0M1ekx0Q1dBQUNBUUFJQUd2SXA5emJuQSswSUFHakV1TjNIT1VFYkFnQUFBZ2tBYU1DbjJuV2NGK3hQQUFCQUlBRUFBSUVFQU96TWRmWmpuQnZzU3dBQVFDQUJBQUNCQkFEc3lEWDJjNXdmN0VjQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFT3k4dnJXKzhId2RqZWZuN3IvUkFnMHVISDc5NFBnWUVKQUI1aTlLRVdNY0JhQW9DN0dYMFlneGpnSGdLQUx4bCtHSk1RNEJZL0F1UW00dy9qOHZybEZqY0FYT1NOQStiaU5vQ1AzQUR3aWZHSCtYaGQ4NUVBNEl3M0NaaVgxemVuQkFCL2VIT0ErWG1kY3lRQVdKYkZtd0lrOFhwbldRUUFpemNEU09SMWp3QUk1MDBBY25uOVp4TUFBQkJJQUFSVC80RDNnVndDSUpRWFBYRGsvU0NUQUFDQVFBSWdrTm9IUHZLK2tFY0FBRUFnQVFBQWdRUkFHTmQ4d0RYZUg3SUlBQUFJSkFBQUlKQUFDT0o2RC9pSzk0a2NBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBaURJNGNmdjNnOEJLTTc3UkE0QkFBQ0JCQUFBQkJJQVlWenZBZGQ0ZjhnaUFBQWdrQUFBZ0VBQ0lKQnJQdUFqN3d0NUJBQUFCQklBb2RRK2NPVDlJSk1BQ09aRkQzZ2Z5Q1VBQUNDUUFBaW4vaUdYMTM4MkFZQTNBUWprZFk4QVlGa1did2FReE91ZFpSRUFuUENtQVBQek91ZElBSERHbXdQTXkrdWJVd0tBVDd4SndIeThydm5vc0x5OHZ2VitFTlQxOXZOYjc0Y0FQTUh3YzQwYkFHN3k1Z0hqOHZybEZqY0EzTTF0QUl6QjhITVBBY0JEeEFEVVl2UlpTd0R3TkRFQWZSaDluaUVBWUVmaTZIbEdEdmJoUjRBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQU96cjgrTjM3SVF6TitjRitCQUFBQkJJQUFCQklBTURPWEdNL3hybkJ2Z1FBQUFRU0FBQVFTQUJBQTY2ejEzRmVzRDhCQUFDQkJBQTA0bFB0Zlp3VHRDRUFvQ0hqZHB2emdYWUVBQUFFRWdEUW1FKzVsemtYYUVzQVFBZkc3cHp6Z1BZRUFIUmk5TjQ1QitoREFFQkg2ZU9YL3Z5aEp3RUFuYVdPWU9yemhpb0VBQlNRTm9acHp4Y3FPaXd2cjIrOUh3VHcxOXZQYjcwZndtNE1QOVRoQmdDS21YVWtaMzFlTUNvM0FGRFlETGNCaGg5cUVnQXdpSkZpd09oRGZRSUFCbFF4Qm93K2pFVUFBRUFnUHdJRWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJOU0veTYvdWg5NE1BQUJyNjlmM2dCZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0RRZXdENHZ3QUFJTVAvbSs4R0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUg4RHdBOEJBV0J1SjF2dkJnQUFBZ2tBQUFna0FBQWcwSGtBK0IwQUFNenB3OGE3QVFDQVFBSUFBQUlKQUFBSTlEa0EvQTRBQU9aeVlkdmRBQUJBSUFFQUFJRXVCNEN2QVFCZ0RsYzIzUTBBQUFRU0FBQVE2SG9BK0JvQUFNWjJZOHZkQUFCQUlBRUFBSUZ1QjRDdkFRQmdURjlzdUJzQUFBajBkUUM0QlFDQXNkeXgzVzRBQUNDUUFBQ0FRUGNGZ0s4QkFHQU1kMjYyR3dBQUNIUi9BTGdGQUlEYVZteTFHd0FBQ0xRdUFOd0NBRUJOS3pmYURRQUFCRm9mQUc0QkFLQ1dCN2JaRFFBQUJIb3NBTndDQUVBTkQyNnlHd0FBQ1BSNEFMZ0ZBSUMrbnRqaTUyNEFSQUFBOVBIa0J2c0tBQUFDUFI4QWJnRUFvSzBOdHRjTkFBQUUyaVlBM0FJQVFCc2JiZTUyTndBaUFBRDJ0ZUhXK2dvQUFBSnRHd0J1QVFCZ0h4dHY3UFkzQUNJQUFMYTF3N2J1OHhXQUNBQ0FiZXkwcVg0REFBQ0I5Z3NBdHdBQThKd2R0M1RmR3dBUkFBQ1AyWGxEOS84S1FBUUF3RG9OdHROdkFBQWdVSnNBY0FzQUFQZHB0Sm50YmdCRUFBRGMxbkFyMjM0RklBSUE0TExHRzluK053QWlBQURPZGRqR1BqOENGQUVBOEs3VEp2YjdWd0FpQUlCMEhiZXc3ejhERkFFQXBPcThnZjMvSHdBUkFFQ2FBdHZYUHdDV3BjUkJBRUFUUlRhdlJnQXNTNWtEQVlEZEZOcTZPZ0d3TEtVT0JnQTJWV3pqYWdYQXNwUTdJQUI0V3NGdHF4Y0F5MUx5b0FEZ0lVVTNyV1lBTEV2WkF3T0F1eFhlc3JvQnNDeWxEdzRBYmlxK1liVURZRm5LSHlBQWZETEFkcFYvZ0dkZVh0OTZQd1FBdUdxQTRUK3Fmd053YXFDREJTRE1ZQnMxVmdBc3kzQUhERUNBQWJkcHVBZDh4bGNDQVBRMDRQQWZqWGNEY0dyZ2d3ZGdjSU52ME5nQnNDekQvd0VBR05BRTJ6UDhFempqS3dFQTlqVEI4QitOZndOd2FxSS9EQURGVExZeFV6MlpNMjREQU5qQ1pNTi9OT1dUT2lNRUFIakVwTU4vTk5kWEFKZE0vZ2NFWUFjQjJ6SDlFenpqTmdDQVd3S0cveWptaVo0UkFnQ2NDaHIrbzdnbmZFWUlBR1FMSFA2ajJDZCtSZ2dBWkFrZS9xUDRBemdqQkFEbVp2ai9jQkRYaUFHQU9SajlpeHpLVjRRQXdKZ00vMDBPWncweEFGQ2IwYitiZzNxVUdBQ293ZWcveEtGdFFRd0F0R1gwbitZQTl5QUlBTFpsOERmblFGc1FCQURyR1B6ZE9lQmVSQUhBTzJQZmhVT3ZTaUFBc3pEd0pmMEhJc0NCUEYrYVdOY0FBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+<meta name="theme-color" content="#0064B0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Malaise L2">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAD1ElEQVR4nO3d0VHbQBiFUcykv1BEUlUoIqmQPIAHMLKRVruS/utz3mM0ms83Cw7K6eEIfv192fsS6OD56bT3JexzAQK+DzsEvt0XFPF92yjusV9ExEwZGPeYFxYycwwI+7H3C4qZ2Qa00u8dImTW6LTWfRZazKzVqaF17wohM8KKtW5faDEzyoq22oIWM6M1NrY8aDGzlYbWlgUtZra2sLn5QYuZvSxob17QYmZvMxv8PmgxcxQzWuz/0Tfs6HbQ1pmj+abJ60GLmaO60aYjB1Gmg7bOHN2VRr8GLWaqmGjVkYMon4O2zlRz0ayFJoqgifIetOMGVX1o10ITRdBEeQ3acYPq3hq20EQRNFEETZST8zNJLDRRBE0UQRNF0EQRNFEETRRBE0XQRBE0UQRNlB97X0CSlz8/m//s6fe/jldyv/xbjg7WhHxJ2OsIeoWeIV8Sdhtn6EYjY97i9VMJmiiCbrDVelrp5QRNFEEvtPVqWullBE0UQRNF0EQRNFEETRRBE0XQRBE0UQRNFEETRdBEETRRBE0UQRNF0EQRNFEETRRBE0XQRBE0UQRNFEETRdBEETRRop4+6qEs7VKedhoRtJD7qR526aCFPE7VsMueocU8VtX7WzZomFIy6KrrUU3F+1wyaLimXNAVV6Oyave7XNBwi6CJImiiCJoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJUi7oqr/rVlW1+10uaLilZNDVVqOqive5ZNBwTdmgK65HJVXvb+kHzZxV+723I6sa8llE0GfCblc95LOooLewx5smJbYtlD1DwxRBE0XQRBE0UQRNFEETRdBEETRRBE0UQRNF0EQRNFEETRRBE0XQRBE0UQRNFEETRdBEETRRBE0UQRNF0EQRNFEEvdDWD33xkJllBE0UQTfYajWt83KCJoqgG41eT+vcxtNHO+j5RFIhryPojtaELeQ+BE0UZ2iiCJoogiaKoIkiaKIImiiCJoqgiSJoojw+PD+d9r4I6OL56WShiSJoogiaKK9BO0dT3VvDFpoogibKe9COHVT1oV0LTRRBE+Vz0I4dVHPRrIUmytegrTRVTLQ6vdCi5uiuNOrIQZTrQVtpjupGm7cXWtQczTdNOnIQ5fugrTRHMaPFeQstavY2s8H5Rw5Rs5cF7S07Q4uarS1sbvk3haJmKw2ttf2UQ9SM1thY+4/tRM0oK9rqE6X/1oIeOoxknw9WrDVrdWqof4jWmiU6j2H/j76tNXMNaGVsfNaaKQNHb7s1Ffd92+hv7n2OB+K+DzscP49x3hV4hgN8//QfUMvoEDS9eawAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAER0lEQVR4nO3d4XHTQBSFUZmhP1IEVEWKgArhBzCE4DiW9VbSvntOAYnHvp9WTjLOZTmbz99+HP0QGOj56XL0Q3jp2Adj7CzLoVHs/42Nnlt2jmG/b2b4rLFTCOO/ieGzxeAQxn1xw6fSoBDqv6jhM1JxCB8qv5jxM1zxxmpqMnyOUHAabD8BjJ+jFGxvWwDGz9E2bvDxAIyfs9iwxccCMH7O5sFNrg/A+DmrB7a5LgDj5+xWbvT+AIyfWazY6n0BGD+zuXOz7wdg/Mzqju3W/ikETOZ2AK7+zO6dDb8dgPHTxY0tuwUi2vUAXP3p5o1NOwGI9n8Arv50dWXbTgCi/RuAqz/dvdq4E4BofwNw9SfFi607AYgmAKL9CsDtD2l+b94JQDQBEE0ARBMA0S7eAJPMCUA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQ7ePRD6C7H18/bf4aly/fCx4J1/hboEEqhv+aEOq5BRpgxPhHft1kAig2eqQiqCWAQnuNUwR1BFBk71GKoIYAiCaAAkddjZ0C2wmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgWtt/kOFjA+t1/Acd7QIw/PE6hdDqFsj499HpeW4TQKcXZQZdnu8WAXR5MWbT4XmfPoAOL8LMZn/+pw8Atpg6gNmvPl3M/DpMHQBsJQCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiDa1AF0+niOmc38OkwdAGw1fQAzX306mP35nz6AZZn/RZhVh+e9RQDL0uPFmEmX57tNAMvS50U5u07Pc7sPx/1j5o/qOKtOw/+jbQB7OjK2jqPcU6tbIFhLAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTQIGjPp7QxyJuJwCiCaDI3ldjV/8aAii01yiNv44Aio0ep/HXEsAAo0Zq/PX8g4zBKv55huGPIwCiuQUimgCIJgCiCYBoAiCaAIgmAKIJgGgCINqH5fnpcvSDgEM8P12cAEQTANEEQDQBEO1XAN4Ik+b35p0ARBMA0f4G4DaIFC+27gQg2r8BOAXo7tXGnQBE+z8ApwBdXdm2E4Bo1wNwCtDNG5t2AhDt7QCcAnRxY8u3TwARMLt3NuwWiGjvB+AUYFZ3bPe+E0AEzObOzd5/CyQCZrFiq+veA4iAs1u50fVvgkXAWT2wzcd+CiQCzubBTT7+Y1ARcBYbtrjt9wAi4GgbN7j9F2Ei4CgF26sdr/84yR4KL7q1fwrhNGC04o2NG6zTgEqDLq7jr9hCYIvBdxX73bIIgTV2up3e/55dCNyy8/vIY9+0ioFlOfSHJ+f7qY0oejvZTwp/Ahk/997P0S+DAAAAAElFTkSuQmCC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#0064B0; --brand-d:#004f8c; --red:#c0392b; --red-bg:#fde8e8;
+    --ink:#16202b; --muted:#5b6b78; --line:#d7dde2; --bg:#eef2f6; --card:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{background:var(--bg);}
+  body{
+    font-family:"IBM Plex Sans",system-ui,sans-serif; color:var(--ink);
+    max-width:480px; margin:0 auto; padding-bottom:120px; font-size:16px;
+  }
+
+  header{
+    position:sticky; top:0; z-index:30;
+    background:linear-gradient(135deg,var(--brand),var(--brand-d)); color:#fff;
+    padding:calc(14px + env(safe-area-inset-top)) 16px 14px; display:flex;
+    align-items:center; justify-content:space-between; box-shadow:0 2px 8px rgba(0,0,0,.18);
+  }
+  header h1{font-size:17px; font-weight:700; letter-spacing:.2px;}
+  header .sub{font-size:11px; opacity:.85; margin-top:1px;}
+  .roundel{
+    flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:#fff; color:var(--brand);
+    display:flex; align-items:center; justify-content:center; font-weight:700; font-size:17px;
+  }
+
+  .wrap{padding:14px;}
+
+  .vital{background:var(--red-bg); border:2px solid var(--red); border-radius:14px; padding:14px; margin-bottom:14px;}
+  .vital .vtitle{color:var(--red); font-weight:700; font-size:14px; margin-bottom:10px; display:flex; align-items:center; gap:6px;}
+  .vrow{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;}
+  .vrow:last-child{margin-bottom:0;}
+  .vrow .q{font-weight:600; font-size:15px;}
+  .alert{margin-top:10px; background:var(--red); color:#fff; border-radius:10px; padding:12px; font-weight:700;
+    text-align:center; font-size:14px; line-height:1.35; display:none; animation:pulse 1.1s infinite;}
+  .alert.show{display:block;}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,57,43,.5);}50%{box-shadow:0 0 0 8px rgba(192,57,43,0);}}
+
+  .card{background:var(--card); border-radius:14px; padding:14px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .sect{font-size:11px; font-weight:700; color:var(--brand); text-transform:uppercase; letter-spacing:.6px; margin-bottom:10px;}
+
+  .field{margin-bottom:13px;}
+  .field:last-child{margin-bottom:0;}
+  label.l{display:block; font-weight:600; font-size:13px; margin-bottom:6px; color:#33414d;}
+
+  input[type=text],input[type=tel]{width:100%; border:1.5px solid var(--line); border-radius:9px; padding:11px 12px;
+    font-family:inherit; font-size:15px; background:#fafbfc; color:var(--ink);}
+  input[type=text]:focus,input[type=tel]:focus{outline:none; border-color:var(--brand); background:#fff;}
+  .inline{display:flex; gap:8px;} .inline > *{flex:1;}
+
+  .pills{display:flex; flex-wrap:wrap; gap:7px;}
+  .pill{border:1.5px solid var(--line); background:#fafbfc; color:#33414d; border-radius:999px;
+    padding:8px 14px; font-size:14px; font-weight:500; cursor:pointer; user-select:none;
+    transition:all .12s; font-family:inherit;}
+  .pill:active{transform:scale(.96);}
+  .pill.on{background:var(--brand); border-color:var(--brand); color:#fff; font-weight:600;}
+  .pill.on.danger{background:var(--red); border-color:var(--red);}
+
+  .bar{position:fixed; bottom:0; left:0; right:0; max-width:480px; margin:0 auto; display:flex; gap:10px;
+    padding:12px 14px calc(12px + env(safe-area-inset-bottom)); background:#fff; border-top:1px solid var(--line);
+    box-shadow:0 -3px 12px rgba(0,0,0,.08);}
+  .btn{flex:1; border:none; border-radius:11px; padding:15px; font-size:15px; font-weight:700; font-family:inherit; cursor:pointer;}
+  .btn:active{transform:scale(.98);}
+  .btn-main{background:var(--brand); color:#fff;}
+  .btn-ghost{flex:0 0 auto; background:#e7edf2; color:#445; padding:15px 18px;}
+
+  .modal{position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:50; display:none; align-items:flex-end; justify-content:center;}
+  .modal.show{display:flex;}
+  .sheet{background:#fff; width:100%; max-width:480px; border-radius:18px 18px 0 0; padding:18px 16px calc(20px + env(safe-area-inset-bottom));
+    max-height:88vh; overflow:auto; animation:up .25s ease;}
+  @keyframes up{from{transform:translateY(100%);}to{transform:translateY(0);}}
+  .sheet h2{font-size:16px; color:var(--brand); margin-bottom:4px;}
+  .sheet .sh-sub{font-size:12px; color:var(--muted); margin-bottom:12px;}
+  .recap{background:#f3f7fa; border:1px solid var(--line); border-radius:12px; padding:14px; font-size:14.5px;
+    line-height:1.55; white-space:pre-wrap; color:#222;}
+  .recap .rwarn{color:var(--red); font-weight:700;}
+  .sheet-btns{display:flex; gap:10px; margin-top:14px;}
+  .copied{text-align:center; color:var(--brand); font-weight:600; font-size:13px; height:16px; margin-top:8px;}
+  .disclaim{font-size:11px; color:var(--muted); text-align:center; margin:6px 14px 0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Malaise voyageur</h1>
+    <div class="sub">Fiche d'intervention · à transmettre au PCS</div>
+  </div>
+  <div class="roundel">2</div>
+</header>
+
+<div class="wrap">
+
+  <div class="vital">
+    <div class="vtitle">⚠ D'abord — 2 réflexes vitaux</div>
+    <div class="vrow"><span class="q">La personne répond ?</span>
+      <div class="pills" data-single="repond"><span class="pill" data-v="oui">oui</span><span class="pill" data-v="non">non</span></div></div>
+    <div class="vrow"><span class="q">Elle respire ?</span>
+      <div class="pills" data-single="respire"><span class="pill" data-v="oui">oui</span><span class="pill" data-v="non">non</span></div></div>
+    <div class="alert" id="alert">SI « NON » → APPEL POMPIERS IMMÉDIAT VIA LE PCS<br>(ne pas attendre le reste de la fiche)</div>
+  </div>
+
+  <div class="card">
+    <div class="sect">Lieu</div>
+    <div class="field"><input type="text" id="station" placeholder="Station"></div>
+    <div class="field inline"><input type="text" id="quai" placeholder="Quai / direction"><input type="text" id="repere" placeholder="Niveau / repère"></div>
+  </div>
+
+  <div class="card">
+    <div class="sect">Voyageur</div>
+    <div class="field"><label class="l">Sexe</label>
+      <div class="pills" data-single="sexe"><span class="pill" data-v="Homme">Homme</span><span class="pill" data-v="Femme">Femme</span></div></div>
+    <div class="field"><label class="l">Âge approximatif</label><input type="text" id="age" placeholder="ex. ~60 ans"></div>
+    <div class="field"><label class="l">Téléphone du voyageur (pour rappel pompiers)</label><input type="tel" id="tel_voyageur" inputmode="tel" placeholder="ex. 06 12 34 56 78"></div>
+    <div class="field"><label class="l">En état de parler ?</label>
+      <div class="pills" data-single="parler"><span class="pill" data-v="oui">oui</span><span class="pill" data-v="non">non</span><span class="pill" data-v="confus">confus</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="sect">Ce qu'il ressent</div>
+    <div class="field"><label class="l">Où a-t-il mal ?</label>
+      <div class="pills" data-multi="douleur">
+        <span class="pill" data-v="tête">tête</span><span class="pill" data-v="poitrine">poitrine</span><span class="pill" data-v="ventre">ventre</span>
+        <span class="pill" data-v="dos">dos</span><span class="pill" data-v="jambe">jambe</span><span class="pill" data-v="autre">autre</span></div></div>
+    <div class="field"><input type="text" id="symptome" placeholder="Symptôme principal (ses mots, sans interpréter)"></div>
+    <div class="field"><label class="l">Comment c'est arrivé ?</label>
+      <div class="pills" data-single="survenue"><span class="pill" data-v="d'un coup">d'un coup</span><span class="pill" data-v="progressivement">progressivement</span></div></div>
+    <div class="field"><label class="l">Déjà eu ça avant ?</label>
+      <div class="pills" data-single="deja"><span class="pill" data-v="oui">oui</span><span class="pill" data-v="non">non</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="sect">Chute & blessure</div>
+    <div class="field"><label class="l">Malaise avec chute ?</label>
+      <div class="pills" data-single="chute"><span class="pill" data-v="avec chute">avec chute</span><span class="pill" data-v="sans chute">sans chute</span></div></div>
+    <div class="field"><label class="l">Blessure ?</label>
+      <div class="pills" data-single="blessure"><span class="pill" data-v="non">non</span><span class="pill" data-v="oui">oui</span></div></div>
+    <div class="field"><input type="text" id="blessure_niv" placeholder="Si oui : à quel niveau ?"></div>
+    <div class="field"><label class="l">Plaie ?</label>
+      <div class="pills" data-single="plaie"><span class="pill" data-v="oui">oui</span><span class="pill" data-v="non">non</span></div></div>
+    <div class="field"><label class="l">Saignement ?</label>
+      <div class="pills" data-single="saignement"><span class="pill" data-v="non">non</span><span class="pill" data-v="oui">oui</span><span class="pill" data-v="abondant">abondant</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="sect">Antécédents & contexte</div>
+    <div class="field"><label class="l">Maladie connue</label>
+      <div class="pills" data-multi="maladie">
+        <span class="pill" data-v="cœur">cœur</span><span class="pill" data-v="diabète">diabète</span><span class="pill" data-v="épilepsie">épilepsie</span>
+        <span class="pill" data-v="asthme">asthme</span><span class="pill" data-v="tension">tension</span></div></div>
+    <div class="field"><input type="text" id="traitement" placeholder="Traitement en cours"></div>
+    <div class="field"><input type="text" id="allergie" placeholder="Allergie connue"></div>
+    <div class="field"><label class="l">Enceinte ? (si femme)</label>
+      <div class="pills" data-single="enceinte"><span class="pill" data-v="oui">oui</span><span class="pill" data-v="non">non</span></div></div>
+    <div class="field"><label class="l">Contexte</label>
+      <div class="pills" data-multi="contexte">
+        <span class="pill" data-v="a mangé">a mangé</span><span class="pill" data-v="à jeun">à jeun</span><span class="pill" data-v="alcool / produit">alcool / produit</span></div></div>
+    <div class="field"><label class="l">Évolution</label>
+      <div class="pills" data-single="evolution"><span class="pill" data-v="s'aggrave">s'aggrave</span><span class="pill" data-v="stable">stable</span><span class="pill" data-v="s'améliore">s'améliore</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="sect">Suites</div>
+    <div class="field"><label class="l">N° de ma tablette (pour rappel pompiers)</label><input type="tel" id="tel_tablette" inputmode="tel" placeholder="ex. 07 ..."></div>
+    <div class="field inline"><input type="text" id="caserne" placeholder="Caserne pompiers"><input type="text" id="hopital" placeholder="Hôpital (si transport)"></div>
+    <div class="field"><input type="text" id="agent" placeholder="Nom de l'agent"></div>
+  </div>
+
+  <div class="disclaim">On ne pose pas de diagnostic — on observe, on coche, on transmet. Aucune donnée n'est enregistrée : la fiche s'efface à la réinitialisation.</div>
+</div>
+
+<div class="bar">
+  <button class="btn btn-ghost" onclick="reset()">↺</button>
+  <button class="btn btn-main" onclick="openRecap()">Récapitulatif PCS</button>
+</div>
+
+<div class="modal" id="modal">
+  <div class="sheet">
+    <h2>Récapitulatif à dicter au PCS</h2>
+    <div class="sh-sub">Lis-le tel quel ou copie-le.</div>
+    <div class="recap" id="recap"></div>
+    <div class="copied" id="copied"></div>
+    <div class="sheet-btns">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeRecap()">Retour</button>
+      <button class="btn btn-main" onclick="copyRecap()">Copier</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const state = { single:{}, multi:{} };
+  document.querySelectorAll('.pills').forEach(group=>{
+    const single = group.dataset.single, multi = group.dataset.multi;
+    if(multi) state.multi[multi] = new Set();
+    group.querySelectorAll('.pill').forEach(p=>{
+      p.addEventListener('click', ()=>{
+        const v = p.dataset.v;
+        if(single){
+          const was = p.classList.contains('on');
+          group.querySelectorAll('.pill').forEach(x=>x.classList.remove('on','danger'));
+          if(!was){ p.classList.add('on'); if(v==='non'&&(single==='repond'||single==='respire')) p.classList.add('danger'); state.single[single]=v; }
+          else { delete state.single[single]; }
+          if(single==='repond'||single==='respire') checkVital();
+        } else {
+          p.classList.toggle('on');
+          if(p.classList.contains('on')) state.multi[multi].add(v); else state.multi[multi].delete(v);
+        }
+      });
+    });
+  });
+  function checkVital(){
+    document.getElementById('alert').classList.toggle('show', state.single.repond==='non' || state.single.respire==='non');
+  }
+  const val = id => document.getElementById(id).value.trim();
+  function buildRecap(){
+    const L=[]; const s=state.single, m=state.multi;
+    let lieu=[val('station'),val('quai'),val('repere')].filter(Boolean).join(' — ');
+    L.push('▸ LIEU : '+(lieu||'…'));
+    let rappel=[]; if(val('tel_tablette'))rappel.push('ma tablette : '+val('tel_tablette')); if(val('tel_voyageur'))rappel.push('tél. voyageur : '+val('tel_voyageur'));
+    if(rappel.length) L.push('▸ RAPPEL (pour appeler) : '+rappel.join(' · '));
+    L.push('▸ VOYAGEUR : '+[s.sexe||'sexe ?', val('age')?('~'+val('age')):'âge ?'].join(', '));
+    let cons=[]; if(s.repond)cons.push('répond : '+s.repond); if(s.respire)cons.push('respire : '+s.respire); if(s.parler)cons.push('parle : '+s.parler);
+    if(cons.length) L.push('▸ ÉTAT : '+cons.join(' · '));
+    let sy=[]; if(m.douleur&&m.douleur.size)sy.push('douleur : '+[...m.douleur].join(', ')); if(val('symptome'))sy.push(val('symptome')); if(s.survenue)sy.push(s.survenue); if(s.deja)sy.push('déjà eu : '+s.deja);
+    if(sy.length) L.push('▸ SYMPTÔME : '+sy.join(' · '));
+    let cb=[]; if(s.chute)cb.push(s.chute);
+    if(s.blessure==='oui'){cb.push('blessure'+(val('blessure_niv')?(' ('+val('blessure_niv')+')'):''));} else if(s.blessure==='non')cb.push('pas de blessure');
+    if(s.plaie)cb.push('plaie : '+s.plaie); if(s.saignement)cb.push('saignement : '+s.saignement);
+    if(cb.length) L.push('▸ CHUTE / BLESSURE : '+cb.join(' · '));
+    let an=[]; if(m.maladie&&m.maladie.size)an.push([...m.maladie].join(', ')); if(val('traitement'))an.push('traitement : '+val('traitement')); if(val('allergie'))an.push('allergie : '+val('allergie')); if(s.enceinte)an.push('enceinte : '+s.enceinte);
+    if(an.length) L.push('▸ ANTÉCÉDENTS : '+an.join(' · '));
+    let ct=[]; if(m.contexte&&m.contexte.size)ct.push([...m.contexte].join(', ')); if(s.evolution)ct.push('évolution : '+s.evolution);
+    if(ct.length) L.push('▸ CONTEXTE : '+ct.join(' · '));
+    let su=[]; if(val('caserne'))su.push('caserne : '+val('caserne')); if(val('hopital'))su.push('hôpital : '+val('hopital')); if(val('agent'))su.push('agent : '+val('agent'));
+    if(su.length) L.push('▸ SUITES : '+su.join(' · '));
+    let txt=L.join('\n');
+    if(s.repond==='non'||s.respire==='non') txt='⚠ URGENCE VITALE — APPEL POMPIERS IMMÉDIAT\n\n'+txt;
+    return txt||'Aucune information saisie pour le moment.';
+  }
+  function openRecap(){
+    const r=document.getElementById('recap'); const txt=buildRecap(); r.textContent=txt;
+    if(txt.startsWith('⚠')){ r.innerHTML='<span class="rwarn">'+txt.split('\n')[0]+'</span>'+txt.slice(txt.indexOf('\n')); }
+    document.getElementById('copied').textContent=''; document.getElementById('modal').classList.add('show');
+  }
+  function closeRecap(){ document.getElementById('modal').classList.remove('show'); }
+  function copyRecap(){
+    navigator.clipboard.writeText(buildRecap()).then(()=>{document.getElementById('copied').textContent='✓ Copié';})
+      .catch(()=>{document.getElementById('copied').textContent='Copie indisponible — sélectionne le texte';});
+  }
+  function reset(){
+    if(!confirm('Effacer la fiche et démarrer un nouveau voyageur ?')) return;
+    document.querySelectorAll('.pill').forEach(p=>p.classList.remove('on','danger'));
+    document.querySelectorAll('input[type=text]').forEach(i=>i.value='');
+    state.single={}; Object.keys(state.multi).forEach(k=>state.multi[k]=new Set());
+    document.getElementById('alert').classList.remove('show'); window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.getElementById('modal').addEventListener('click',e=>{ if(e.target.id==='modal') closeRecap(); });
+
+</script>
+</body>
+</html>
